@@ -1,0 +1,66 @@
+.Outerframe
+{
+	width: 660px;
+	margin-top: 20px;
+	margin-left: 30%;
+}
+.top
+{
+	width: 660px;
+	height: 260px;
+}
+.topone {
+    width: 660px;
+    height: 108px;
+    background-color: #FFFF99;
+    font-size: 20px;
+    padding-top: 73px;
+    text-align: center;
+}
+a
+{
+	text-decoration:none;
+
+}
+.comment
+{
+	width:660px;
+	height: 300px;
+}
+.left
+{
+	float:left;
+	display: initial;
+	width: 400px;
+	height: 300px;
+	
+}
+.mid {
+    float: left;
+    width: 61px;
+    height: 300px;
+    background-color: red;
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+}
+.right {
+    float: left;
+    background-color: pink;
+    width: 199px;
+    height: 300px;
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 20px;
+}
+.bottom
+{
+	width: 660px;
+	height: 100px;
+	background-color: #66FFFF;
+	text-align: center;
+	color: #F33BB4;
+	font-size: 20px;
+	padding-top: 20px;
+	line-height: 40px; 
+}
