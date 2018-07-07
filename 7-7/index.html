@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>时间</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript">
+		function gettime()
+		{
+			var now=new Date();
+			var h=now.getHours();
+			var m=now.getMinutes();
+			var s=now.getSeconds();
+			var result;
+			if (h<10) 
+			{
+				h="0"+h;
+				alert(1);
+			}
+			if (m<10) 
+			{
+				m="0"+m;
+			}
+			if (s<10) 
+			{
+				s="0"+s;
+			}
+			if (h<12) 
+			{
+				result=h+":"+m+":"+s+"  "+"am";
+			}else
+			{
+				result=h+":"+m+":"+s+"  "+"pm";
+			}
+			
+			document.getElementById("time").innerHTML=result;
+		}
+		function shwtimr()
+		{
+			window.setInterval("gettime()",1000);
+		}
+	</script>
+</head>
+<body>
+	<a href="#" onclick="shwtimr()">时间</a>
+	<table>
+		<tr>
+			<td clss="time" id="time"></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
