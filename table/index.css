@@ -1,0 +1,35 @@
+table,tr,td
+{
+	border: 1px solid #AA2479;
+}
+.top
+{
+	height: 85px;
+	width: 800px;
+}
+.dgl
+{
+	height: 30px;
+	width: 800px;
+}
+.hs1
+{
+	height: 88px;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+}
+.t1
+{
+	width: 100%;
+	height: 88px;
+}
+.wz
+{
+	text-align: center;
+}
+img
+{
+	width: 100%;
+}
