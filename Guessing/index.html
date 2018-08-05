@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>猜数字游戏</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript">
+		function guessing()
+		{
+		    var isgoon;
+		    var count=0;
+			var num=Math.floor((Math.random()*100)/2);
+			do
+			    {
+			        count=count+1;
+			        if (count<=4)
+			        {
+                        //parseint()方法解析字符串返回数字,prompt()方法用于显示可提示用户进行输入的对话框。
+                        var x=parseInt(window.prompt("请输入1-50之间的数字","剩余"+(5-count)+"次"));
+                        if(x===null)
+                        {
+                            break;
+                        }
+                        else if(x>num)
+                        {
+                            window.alert("您猜的数字太大了!");
+                            isgoon=window.confirm("您是否继续");
+                        }else if(x<num)
+                        {
+                            window.alert("您猜的数字太小了!");
+                            isgoon=window.confirm("您是否继续");
+                        }else if (num===x)
+                        {
+                            window.alert("恭喜您猜对了!");
+                            break;
+                        }else
+                            {
+                                break;
+							}
+					}else
+					    {
+					        window.alert("您猜的次数超过4次");
+					        break;
+						}
+				}while (isgoon);
+		}
+	</script>
+</head>
+<body>
+	<a class="guessing" href="#" onclick="guessing()">猜数字游戏</a>
+</body>
+</html>
