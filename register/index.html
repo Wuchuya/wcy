@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript">
+		function register()
+		{
+			var username=document.getElementById("username").value;
+			var password=document.getElementById("password").value;
+			var repassword=document.getElementById("repassword").value;
+            var tel=document.getElementById("tel").value;
+            var zwpj=document.getElementById("zwpj").value;
+            var error="";
+			if (username.length>=6&&username.length<=8)
+			{			   
+			    
+			}else {
+				 error+="用户名长度需要6-8字符";
+			}
+			if (password=='')
+			 {
+			 	error+="密码不能为空";
+			 }
+			if (password!=repassword)
+			{
+			    error+="您输入的密码不一致";
+			}
+			if (tel.length!=11)
+			{
+				error+="电话长度需为11位";
+			}
+			if (zwpj.length>=5&&zwpj.length<=50)
+			{
+				
+			}else {
+				error+="评价输入长度需为5到50之间";
+			}
+			if (error) 
+			{
+				window.alert(error);
+			}else 
+			{
+				window.frm.submit();
+			}
+        }
+	</script>
+</head>
+<body>
+	<form name="frm" action="" method="post">
+		<table algin="center">
+		<caption>
+			<p>请输入您的注册信息</p>
+		</caption>
+		<tr>
+			<td>用户名</td>
+			<td>
+				<input type="text" name="username" id="username">
+			</td>
+		</tr>
+		<tr>
+			<td>密码</td>
+			<td><input type="password" name="pwd" id="password"></td>
+		</tr>
+		<tr>
+			<td>确认密码</td>
+			<td><input type="password" name="repassword" id="repassword"></td>
+		</tr>
+		<tr>
+			<td>电话</td>
+			<td>
+				<input type="text" name="tel" id="tel">
+			</td>
+		</tr>
+		<tr>
+			<td>所在城市</td>
+			<td>
+				<select id="szcs">
+					<option>福州</option>
+					<option>厦门</option>
+					<option>泉州</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>自我评价</td>
+			<td>
+				<textarea name="zwpj" id="zwpj"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button type="button" onclick="register()">注册</button>
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
